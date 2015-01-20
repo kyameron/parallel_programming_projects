@@ -1,7 +1,12 @@
 /*
 	Cameron Boyd
+	CECS 327
 
-	A thread writes to an index
+	A thread writes to an index in the flag array
+	which has a value that is larger than the highest 
+	value so far. 
+	If this thread's value is less than any thread in
+	the array, it breaks the lock (goes into the critical section)
 */
 
 import java.util.concurrent.TimeUnit;
